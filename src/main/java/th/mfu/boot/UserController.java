@@ -41,7 +41,7 @@ public class UserController {
     public ResponseEntity<List<User>> list() {
         
         //TODO: remove below and return proper result
-        List<User> users = repo.findALL();
+        List<User> users = repo.findAll();
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
 
